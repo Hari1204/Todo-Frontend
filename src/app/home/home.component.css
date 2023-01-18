@@ -1,0 +1,118 @@
+html,body,#background {  
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(0, 255, 136) , rgb(75, 238, 238));
+}
+.top-row
+{
+    /* display: flex;
+    justify-content: space-around; */
+    padding: 20px 0 0 20px;
+}
+.top{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 8px;
+}
+.tasktxt{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 6px;
+    border: solid 2px black;
+    border-radius: 4px;
+    height: 40px;
+    width: 360px;
+    margin-right: 4px;
+}
+.task
+{
+    font-size: 18px;
+    height: 26px;
+    width: 280px;
+    padding: 4px;
+}
+.addTaskbtn{
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(20, 211, 20);    
+    border: solid 4px rgb(253, 253, 253); 
+    border-radius: 6px;
+}
+.addTaskbtn:hover{
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(20, 170, 20);
+    border: solid 4px rgb(253, 253, 253); 
+    border-radius: 6px;
+}
+.container
+{
+    padding-top: 50px;
+}
+ul{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+}
+li{
+    float: left;
+    padding: 6px;
+}
+.editbtn
+{
+    color: rgb(18, 128, 161);
+    font-size: 14px;
+    border-radius: 16px;
+    border-color: rgb(28, 119, 131);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.editbtn:hover
+{
+    color: rgb(46, 154, 187);
+    font-size: 14px;
+    border-radius: 16px;
+    border-color: rgb(28, 119, 131);
+    box-shadow: 4px 4px 4px rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.del{
+    color: red;
+    font-size: 14px;
+    border-radius: 16px;
+    border-color: rgb(104, 1, 1);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.del:hover
+{
+    color: rgb(248, 93, 93);
+    font-size: 14px;
+    border-radius: 16px;
+    border-color: rgb(104, 1, 1);
+    box-shadow: 4px 4px 4px rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.back-color
+{
+    background-color: aquamarine;
+}

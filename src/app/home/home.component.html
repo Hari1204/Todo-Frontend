@@ -1,0 +1,46 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<body >
+  <div class="top-row">
+    <div style="font-size: 30px;">Welcome...
+    </div>
+  </div>
+    <h1 style="color: rgb(11, 55, 61);">To Do List</h1>
+    <form>
+    <div class="top">
+    <input #taskdesc class="tasktxt" type="text" name="task" placeholder="Enter your works..." spellcheck="true">
+    <button class="addTaskbtn" type="submit" (click)="addTask(taskdesc)">Save Task</button>
+    </div>
+    </form>
+    <div>
+    <div class="container">
+        <ul *ngFor="let task of tasks">
+        <li><input #txt name="txt" class="task" type="text" value="{{task.task}}" readonly></li>
+        <li><button class="editbtn" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" (click)="call(task)">Edit</button></li>
+        <li><button class="del" (click)="delete(task.taskid)">Drop</button></li>
+        </ul>
+    </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Task</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input #edtxt type="textbox" value="task.value" [(ngModel)]="editTaskvalue">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="editTask()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
